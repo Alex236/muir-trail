@@ -1,5 +1,11 @@
 mod parameter_store;
+mod map;
 
 fn main() {
-    println!(parameter_store::POP_SIZE.to_string());
+    for row in map::MAP.iter() {
+        for item in row.iter() {
+            print!("{}", item);
+        }
+        println!()
+    }
 }
