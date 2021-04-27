@@ -1,3 +1,8 @@
 pub static POP_SIZE: i64 = 65536;
 pub static GEN_COUNT: i64 = 100;
 pub static MAX_SIM_STEPS: i64 = 200;
+pub static MAX_INTERNAL_STATE: i64 = 32;
+pub static MAX_TRAIL_STATE: i64 = 2;
+pub static LOG_MAX_INTERNAL_STATE: i64 = 5;
+pub static LOG_MAX_ACTION: i64 = 2;
+pub static LENGTH_OF_GENOME: i64 = MAX_INTERNAL_STATE * MAX_TRAIL_STATE * (LOG_MAX_INTERNAL_STATE + LOG_MAX_ACTION)
